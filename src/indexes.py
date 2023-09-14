@@ -12,7 +12,7 @@ from sentinelhub import CRS, Geometry, FisRequest, SHConfig
 
 class Index:
     def __init__(self):
-        self.INSTANCE_ID = 'cc37e3d2-1540-49cd-a137-4598dbad9dd1' #Esto debería ser un environment var.
+        self.INSTANCE_ID = '' #Instance ID from SentinelHub
         self.path = "Parcelas_Test.geojson" #Path donde están los archivos. 
 
     def raw_sat_data_extractor(self, GEOJSON, last_date = datetime.date.today(), months = 60):
